@@ -37,13 +37,10 @@ SpeakSafe addresses this gap by:
   <img src="screenshots/ai_legal_guidance_2.png" width="220" alt="AI legal guidance 2"/>
 </p>
 
-### AI Legal Guidance
+
+### Interactions & Profile
 <p align="center">
   <img src="screenshots/comment_section.png" width="220" alt="Post comments"/>
-</p>
-
-### Conversations & Profile
-<p align="center">
   <img src="screenshots/conversation_list.png" width="220" alt="Conversation list"/>
   <img src="screenshots/messages.png" width="220" alt="Conversation chat"/>
   <img src="screenshots/profile.png" width="220" alt="Profile"/>
