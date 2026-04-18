@@ -19,6 +19,38 @@ SpeakSafe addresses this gap by:
 
 ---
 
+## Screenshots
+
+### Onboarding & Authentication
+<p align="center">
+  <img src="speaksafe_flutter/screenshots/onboarding.png" width="220" alt="Onboarding step 1"/>
+  <img src="speaksafe_flutter/screenshots/onboarding2.png" width="220" alt="Onboarding step 2"/>
+  <img src="speaksafe_flutter/screenshots/signin.png" width="220" alt="Sign in"/>
+  <img src="speaksafe_flutter/screenshots/signup.png" width="220" alt="Sign up"/>
+</p>
+
+### Feed & Posts
+<p align="center">
+  <img src="speaksafe_flutter/screenshots/home.png" width="220" alt="Home feed"/>
+  <img src="speaksafe_flutter/screenshots/create_post.png" width="220" alt="Create post"/>
+  <img src="speaksafe_flutter/screenshots/post_detail.png" width="220" alt="Post detail"/>
+  <img src="speaksafe_flutter/screenshots/post_detail2.png" width="220" alt="Post detail — comments"/>
+</p>
+
+### AI Legal Guidance
+<p align="center">
+  <img src="speaksafe_flutter/screenshots/ai_legal_guidance.png" width="220" alt="AI legal guidance"/>
+</p>
+
+### Conversations & Profile
+<p align="center">
+  <img src="speaksafe_flutter/screenshots/conversation.png" width="220" alt="Conversation list"/>
+  <img src="speaksafe_flutter/screenshots/conversation2.png" width="220" alt="Conversation chat"/>
+  <img src="speaksafe_flutter/screenshots/profile.png" width="220" alt="Profile"/>
+</p>
+
+---
+
 ## Countries Covered
 
 SpeakSafe currently ingests and serves legal guidance for **10 French-speaking African nations**:
