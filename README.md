@@ -68,35 +68,12 @@ SpeakSafe currently ingests and serves legal guidance for **10 French-speaking A
 ---
 
 ## Technical Architecture
+### AI generated image
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                   Flutter Mobile App                      │
-│   (iOS / Android / Web — Dart, Google Fonts, FCM)        │
-└──────────────┬───────────────────────────────────────────┘
-               │  HTTPS REST + WebSocket (WSS)
-┌──────────────▼───────────────────────────────────────────┐
-│              Django 5.2 Backend (Daphne / ASGI)          │
-│                                                           │
-│  ┌─────────────┐  ┌──────────────┐  ┌─────────────────┐ │
-│  │  accounts   │  │    posts     │  │       ai        │ │
-│  │  auth/users │  │ comments/likes│  │  RAG pipeline   │ │
-│  └─────────────┘  └──────────────┘  └─────────────────┘ │
-│  ┌─────────────┐  ┌──────────────┐  ┌─────────────────┐ │
-│  │    chat     │  │notifications │  │     common      │ │
-│  │  encrypted  │  │  FCM / WS    │  │  pagination     │ │
-│  └─────────────┘  └──────────────┘  └─────────────────┘ │
-└──────────────┬───────────────────────────────────────────┘
-               │
-┌──────────────▼───────────────────────────────────────────┐
-│           PostgreSQL 13+ with pgvector extension          │
-│   (users, posts, comments, messages, legal embeddings)    │
-└──────────────────────────────────────────────────────────┘
-               │
-┌──────────────▼───────────────────────────────────────────┐
-│                   External Services                       │
-│   Groq (Llama 3.3 70B) · Firebase FCM · Google OAuth     │
-└──────────────────────────────────────────────────────────┘
+<p align="center">
+  <img src="design/technical_architecture.png" width="220" alt="Post comments"/>
+</p>
+
 ```
 
 ### Frontend — Flutter / Dart
@@ -340,45 +317,6 @@ Both WebSocket consumers run over the same Daphne ASGI process:
 - Per-user channel — events sent on comment, AI guidance ready, moderation action
 - Unread badge count updated live in the Flutter app via `ChangeNotifier`
 - FCM push also fires for background/killed app states
-
----
-
-## Running Locally
-
-### Backend
-
-```bash
-# Requirements: Python 3.12+, PostgreSQL 13+ with pgvector extension
-
-cd speaksafe_backend
-python -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-
-# Environment variables (create .env):
-# SECRET_KEY=...
-# DATABASE_URL=postgres://user:pass@localhost:5432/speaksafe
-# GROQ_API_KEY=...
-# ENCRYPTION_MASTER_KEY=<run: python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())">
-# FIREBASE_CREDENTIALS_JSON=<service account JSON string>
-# AI_ENABLED=true
-
-python manage.py migrate
-python manage.py ingest_legal_code --file /path/to/code_penal.pdf --country burkina_faso --title "Code Pénal du Burkina Faso"
-daphne speaksafe_backend.asgi:application
-```
-
-### Frontend
-
-```bash
-# Requirements: Flutter 3.10+, configured google-services.json (Android) / GoogleService-Info.plist (iOS)
-
-cd speaksafe_flutter
-flutter pub get
-
-# Update lib/core/config/api_config.dart with your backend URL
-
-flutter run
-```
 
 ---
 
