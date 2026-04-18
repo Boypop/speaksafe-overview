@@ -23,8 +23,8 @@ SpeakSafe addresses this gap by:
 
 ### Onboarding & Authentication
 <p align="center">
-  <img src="screenshots/onboarding.png" width="220" alt="Onboarding step 1"/>
-  <img src="screenshots/onboarding2.png" width="220" alt="Onboarding step 2"/>
+  <img src="screenshots/onboarding_1.png" width="220" alt="Onboarding step 1"/>
+  <img src="screenshots/onboarding_2.png" width="220" alt="Onboarding step 2"/>
   <img src="screenshots/signin.png" width="220" alt="Sign in"/>
   <img src="screenshots/signup.png" width="220" alt="Sign up"/>
 </p>
@@ -33,19 +33,19 @@ SpeakSafe addresses this gap by:
 <p align="center">
   <img src="screenshots/home.png" width="220" alt="Home feed"/>
   <img src="screenshots/create_post.png" width="220" alt="Create post"/>
-  <img src="screenshots/post_detail.png" width="220" alt="Post detail"/>
-  <img src="screenshots/post_detail2.png" width="220" alt="Post detail — comments"/>
+  <img src="screenshots/ai_legal_guidance_1.png" width="220" alt="AI legal guidance"/>
+  <img src="screenshots/ai_legal_guidance_2.png" width="220" alt="AI legal guidance 2"/>
 </p>
 
 ### AI Legal Guidance
 <p align="center">
-  <img src="screenshots/ai_legal_guidance.png" width="220" alt="AI legal guidance"/>
+  <img src="screenshots/comment_section.png" width="220" alt="Post comments"/>
 </p>
 
 ### Conversations & Profile
 <p align="center">
-  <img src="screenshots/conversation.png" width="220" alt="Conversation list"/>
-  <img src="screenshots/conversation2.png" width="220" alt="Conversation chat"/>
+  <img src="screenshots/conversation_list.png" width="220" alt="Conversation list"/>
+  <img src="screenshots/messages.png" width="220" alt="Conversation chat"/>
   <img src="screenshots/profile.png" width="220" alt="Profile"/>
 </p>
 
