@@ -71,10 +71,10 @@ SpeakSafe currently ingests and serves legal guidance for **10 French-speaking A
 ### AI generated image
 
 <p align="center">
-  <img src="design/technical_architecture.png" width="220" alt="Post comments"/>
+  <img src="design/technical_architecture.png" width="440" alt="Technical Architecture"/>
 </p>
 
-```
+---
 
 ### Frontend — Flutter / Dart
 
