@@ -27,7 +27,7 @@ SpeakSafe addresses this gap by:
   <img src="screenshots/onboarding_1.jpeg" width="220" alt="Onboarding step 1"/>
   <img src="screenshots/signin.jpeg" width="220" alt="Sign in"/>
   <img src="screenshots/signup.jpeg" width="220" alt="Sign up"/>
-  <img src="screenshots/signup_2.png" width="220" alt="Onboarding step 2"/>
+  <img src="screenshots/signup_2.jpeg" width="220" alt="Signup step 2"/>
 </p>
 
 ### Feed & Posts
