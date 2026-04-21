@@ -22,6 +22,7 @@ SpeakSafe addresses this gap by:
 ## Screenshots
 
 ### Onboarding & Authentication
+**Note:** The app supports both Dark and Light themes. Dark mode is the primary experience. A few Light mode screenshots are included for demonstration purposes.
 <p align="center">
   <img src="screenshots/onboarding_1.jpeg" width="220" alt="Onboarding step 1"/>
   <img src="screenshots/onboarding_2.png" width="220" alt="Onboarding step 2"/>
@@ -33,8 +34,8 @@ SpeakSafe addresses this gap by:
 <p align="center">
   <img src="screenshots/home.jpeg" width="220" alt="Home feed"/>
   <img src="screenshots/create_post.jpeg" width="220" alt="Create post"/>
-  <img src="screenshots/ai_legal_guidance_1.png" width="220" alt="AI legal guidance"/>
-  <img src="screenshots/ai_legal_guidance_2.png" width="220" alt="AI legal guidance 2"/>
+  <img src="screenshots/ai_legal_guidance_1.jpeg" width="220" alt="AI legal guidance"/>
+  <img src="screenshots/ai_legal_guidance_2.jpeg" width="220" alt="AI legal guidance 2"/>
 </p>
 
 
