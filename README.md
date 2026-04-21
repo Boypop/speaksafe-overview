@@ -25,9 +25,9 @@ SpeakSafe addresses this gap by:
 **Note:** The app supports both Dark and Light themes. Dark mode is the primary experience. A few Light mode screenshots are included for demonstration purposes.
 <p align="center">
   <img src="screenshots/onboarding_1.jpeg" width="220" alt="Onboarding step 1"/>
-  <img src="screenshots/onboarding_2.png" width="220" alt="Onboarding step 2"/>
   <img src="screenshots/signin.jpeg" width="220" alt="Sign in"/>
   <img src="screenshots/signup.jpeg" width="220" alt="Sign up"/>
+  <img src="screenshots/signup_2.png" width="220" alt="Onboarding step 2"/>
 </p>
 
 ### Feed & Posts
